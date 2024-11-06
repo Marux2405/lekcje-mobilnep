@@ -212,25 +212,6 @@ public class klasy {
                 wyniklos += trz * 3;
                 break;
         }
-        switch (trz) {
-            case 1:
-                break;
-            case 2:
-                wyniklos += trz * 3;
-                break;
-            case 3:
-                wyniklos += trz * 3;
-                break;
-            case 4:
-                wyniklos += trz * 3;
-                break;
-            case 5:
-                wyniklos += trz * 3;
-                break;
-            case 6:
-                wyniklos += trz * 3;
-                break;
-        }
         switch (czt) {
             case 1:
                 break;
