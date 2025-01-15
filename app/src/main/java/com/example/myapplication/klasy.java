@@ -1,6 +1,7 @@
 package com.example.myapplication;
 
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import java.util.Random;
 
@@ -10,6 +11,12 @@ public class klasy {
     private TextView wynik3;
     private TextView wynik4;
     private TextView wynik5;
+    private ImageView pol1;
+    private ImageView pol2;
+    private ImageView pol3;
+    private ImageView pol4;
+    private ImageView pol5;
+
     private TextView los;
     private TextView wynikgryp;
     private TextView rzuty;
@@ -25,13 +32,20 @@ public class klasy {
     private int ilosc;
     private int wyniklos;
 
-    public klasy(TextView wynik1, TextView wynik2, TextView wynik3, TextView wynik4, TextView wynik5, TextView los, TextView wynikgryp, TextView rzuty, Button start, Button reset) {
+    public klasy(TextView wynik1, TextView wynik2, TextView wynik3, TextView wynik4, TextView wynik5, ImageView pol1,ImageView pol2,ImageView pol3,ImageView pol4,ImageView pol5, TextView los, TextView wynikgryp, TextView rzuty, Button start, Button reset) {
         this.wynik1 = wynik1;
         this.wynik2 = wynik2;
         this.wynik3 = wynik3;
         this.wynik4 = wynik4;
         this.wynik5 = wynik5;
         this.los = los;
+        this.pol1 = pol1;
+        this.pol2 = pol2;
+        this.pol3 = pol3;
+        this.pol4 = pol4;
+        this.pol5 = pol5;
+
+
         this.wynikgryp = wynikgryp;
         this.rzuty = rzuty;
         this.start = start;
@@ -57,102 +71,132 @@ public class klasy {
         switch (liczba1) {
             case 1:
                 jed += 1;
+                pol1.setImageResource(R.drawable.dice_1_th);
                 break;
             case 2:
                 dwa += 1;
+                pol1.setImageResource(R.drawable.dice_2_th);
                 break;
             case 3:
                 trz += 1;
+                pol1.setImageResource(R.drawable.dice_3_th);
                 break;
             case 4:
                 czt += 1;
+                pol1.setImageResource(R.drawable.dice_4_th);
                 break;
             case 5:
                 pie += 1;
+                pol1.setImageResource(R.drawable.dice_5_th);
                 break;
             case 6:
                 sze += 1;
+                pol1.setImageResource(R.drawable.dice_6_th);
                 break;
         }
 
         switch (liczba2) {
             case 1:
                 jed += 1;
+                pol2.setImageResource(R.drawable.dice_1_th);
                 break;
             case 2:
                 dwa += 1;
+                pol2.setImageResource(R.drawable.dice_2_th);
                 break;
             case 3:
                 trz += 1;
+                pol2.setImageResource(R.drawable.dice_3_th);
                 break;
             case 4:
                 czt += 1;
+                pol2.setImageResource(R.drawable.dice_4_th);
                 break;
             case 5:
                 pie += 1;
+                pol2.setImageResource(R.drawable.dice_5_th);
                 break;
             case 6:
                 sze += 1;
+                pol2.setImageResource(R.drawable.dice_6_th);
                 break;
         }
         switch (liczba3) {
             case 1:
                 jed += 1;
+                pol3.setImageResource(R.drawable.dice_1_th);
                 break;
             case 2:
                 dwa += 1;
+                pol3.setImageResource(R.drawable.dice_2_th);
                 break;
             case 3:
                 trz += 1;
+                pol3.setImageResource(R.drawable.dice_3_th);
                 break;
             case 4:
                 czt += 1;
+                pol3.setImageResource(R.drawable.dice_4_th);
                 break;
             case 5:
                 pie += 1;
+                pol3.setImageResource(R.drawable.dice_5_th);
                 break;
             case 6:
                 sze += 1;
+                pol3.setImageResource(R.drawable.dice_6_th);
                 break;
         }
         switch (liczba4) {
             case 1:
                 jed += 1;
+                pol4.setImageResource(R.drawable.dice_1_th);
                 break;
             case 2:
                 dwa += 1;
+                pol4.setImageResource(R.drawable.dice_2_th);
                 break;
             case 3:
                 trz += 1;
+                pol4.setImageResource(R.drawable.dice_3_th);
                 break;
             case 4:
                 czt += 1;
+                pol4.setImageResource(R.drawable.dice_4_th);
                 break;
             case 5:
                 pie += 1;
+                pol4.setImageResource(R.drawable.dice_5_th);
                 break;
             case 6:
                 sze += 1;
+                pol4.setImageResource(R.drawable.dice_6_th);
                 break;
         }
         switch (liczba5) {
             case 1:
                 jed += 1;
+                pol5.setImageResource(R.drawable.dice_1_th);
                 break;
             case 2:
                 dwa += 1;
+                pol5.setImageResource(R.drawable.dice_2_th);
                 break;
             case 3:
                 trz += 1;
+                pol5.setImageResource(R.drawable.dice_3_th);
                 break;
             case 4:
                 czt += 1;
+                pol5.setImageResource(R.drawable.dice_4_th);
                 break;
             case 5:
                 pie += 1;
+                pol5.setImageResource(R.drawable.dice_5_th);
                 break;
             case 6:
                 sze += 1;
+                pol5.setImageResource(R.drawable.dice_6_th);
                 break;
         }
         switch (jed) {
@@ -281,6 +325,13 @@ wynik2.setText(R.string.znak);
 wynik3.setText(R.string.znak);
 wynik4.setText(R.string.znak);
 wynik5.setText(R.string.znak);
+pol1.setImageResource(R.drawable.blank_dice_th);
+pol2.setImageResource(R.drawable.blank_dice_th);
+pol3.setImageResource(R.drawable.blank_dice_th);
+pol4.setImageResource(R.drawable.blank_dice_th);
+pol5.setImageResource(R.drawable.blank_dice_th);
+
+
 wyniklos=wynikgry=ilosc=0;
     los.setText("Wynik tego losowania : " + wyniklos);
     wynikgry += wyniklos;

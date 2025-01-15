@@ -3,6 +3,7 @@ package com.example.myapplication;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.example.myapplication.klasy;
@@ -19,6 +20,11 @@ public class MainActivity extends AppCompatActivity {
     public TextView wynik3;
     public TextView wynik4;
     public TextView wynik5;
+    public ImageView pol1;
+    public ImageView pol2;
+    public ImageView pol3;
+    public ImageView pol4;
+    public ImageView pol5;
     public TextView los;
     public TextView wynikgryp;
     public TextView rzuty;
@@ -37,6 +43,12 @@ public class MainActivity extends AppCompatActivity {
         wynik3 = findViewById(R.id.Result3);
         wynik4 = findViewById(R.id.Result4);
         wynik5 = findViewById(R.id.Result5);
+        pol1 = findViewById(R.id.pole1);
+        pol2 = findViewById(R.id.pole2);
+        pol3 = findViewById(R.id.pole3);
+        pol4 = findViewById(R.id.pole4);
+        pol5 = findViewById(R.id.pole5);
+
         los = findViewById(R.id.los);
         wynikgryp = findViewById(R.id.gameresult);
         rzuty = findViewById(R.id.numthrow);
@@ -49,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         rzuty.setText("Liczba rzutów: " + ilosc);
 
 
-                klasy klasy = new klasy(wynik1, wynik2, wynik3, wynik4, wynik5, los, wynikgryp, rzuty, start, reset);
+                klasy klasy = new klasy(wynik1, wynik2, wynik3, wynik4, wynik5,pol1,pol2,pol3,pol4,pol5, los, wynikgryp, rzuty, start, reset);
                 start.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
